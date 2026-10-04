@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do List CC</h1>
+        <p>Catat tugasmu dengan mudah dengan To-Do List CC</p>
+      </header>
+
+      <div class="input-section">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Masukkan tugas baru..."
+        />
+        <button id="btn-add">Tambah</button>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-box">Total: <span id="total-tasks">0</span></div>
+        <div class="stat-box">Selesai: <span id="completed-tasks">0</span></div>
+        <div class="stat-box">Belum: <span id="uncompleted-tasks">0</span></div>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
